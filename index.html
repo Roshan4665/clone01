@@ -1,0 +1,660 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200&display=swap" rel="stylesheet">
+    <title>This is Neat Cleaning | You move we clean</title>
+    <style>
+        html,
+        body {
+            height: 100%;
+            margin: 0;
+            /* width: 100vw; */
+            font-family: Nunito Sans !important;
+        }
+
+        .landingSVG {
+            z-index: -1;
+            position: absolute;
+            height: 50vh;
+            width: 100%;
+            background-color: #1B9DFF;
+        }
+
+        .curve {
+            position: absolute;
+            top: 100%;
+        }
+
+        .welcomeDiv {
+            text-align: center;
+            color: white;
+
+
+        }
+
+        .cleanerImage {
+            width: 65vw;
+            margin-top: 5vh;
+            /* margin-bottom: 5vh; */
+        }
+
+
+        .navBar {
+            height: 12vh;
+
+            color: white;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .logoText {
+            height: 6vh;
+            display: inline-block;
+            margin: 3vh;
+            fill: white;
+        }
+
+        .menuIcon {
+            margin: 2vh;
+            position: absolute;
+            top: 15%;
+            position: relative;
+            height: 10vh;
+
+        }
+
+        .straightLine1 {
+            height: 4%;
+            width: 8vh;
+            background-color: white;
+            margin-top: 1vh;
+            margin-bottom: 1vh
+        }
+
+        .straightLine2 {
+            height: 4%;
+            width: 8vh;
+            background-color: white;
+            margin-top: 1vh;
+            margin-bottom: 1vh
+        }
+
+        .straightLine3 {
+            height: 4%;
+            width: 8vh;
+            background-color: white;
+            margin-top: 1vh;
+            margin-bottom: 1vh
+        }
+
+        .motoLine {
+
+            padding: 30px;
+
+            font-size: 0rem;
+
+        }
+
+        .motoLine2 {
+            padding: 20px;
+            font-weight: 100;
+            font-size: 1.6rem;
+            line-height: 1.8rem;
+        }
+
+        .introContent {
+            font-weight: 100;
+            color: rgba(61, 58, 58, 0.877);
+            padding: 3vw 5vw 2vw 5vw;
+        }
+
+        h2 {
+            padding: 0;
+            margin: 0;
+            font-weight: 100;
+            font-size: 2.5rem;
+
+        }
+
+        h4 {
+            font-weight: 100;
+            font-size: 1.4rem;
+            line-height: 2.125rem;
+        }
+
+        .services {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .card {
+            color: rgba(27, 26, 26, 0.966);
+            position: relative;
+            width: 90%;
+            margin: auto;
+            margin-bottom: 5vh;
+            height: 75vh;
+            /* background-color: hsl(0, 82%, 53%); */
+            border-radius: 10px;
+
+            /* box-shadow: rgb(226, 222, 222) 2px 2px 2px 4px; */
+            box-shadow: rgb(211, 204, 204) 4px 4px 4px 4px;
+        }
+
+        .imgbox {
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 45%;
+            width: 100%;
+            border-top-right-radius: 10px;
+            border-top-left-radius: 10px;
+        }
+
+        .link {
+            font-weight: 700;
+            color: #1B9DFF;
+            position: absolute;
+            top: 90%;
+            left: 8%;
+            text-decoration: none;
+            display: block;
+        }
+
+        .serviceText {
+            text-align: left;
+            font-size: 0.5rem;
+            position: absolute;
+            top: 48%;
+            height: 33%;
+            padding: 6%;
+            height: 25%;
+            overflow: auto;
+        }
+
+        .hstyle {
+            font-size: 1.7rem;
+            font-weight: 600;
+        }
+
+        .cstyle {
+            color: rgba(26, 24, 24, 0.904);
+            font-size: 1.2rem;
+            margin-top: 5%;
+            line-height: 1.8rem;
+        }
+
+        .reviewStyle {
+            color: black;
+            padding-left: 5vw;
+            padding-right: 5vw;
+            font-size: 1.2rem;
+        }
+
+        .arrowLeft {
+            color: black;
+            display: inline-block;
+            position: absolute;
+            left: 2%;
+            top: 50%;
+            transform: translateY(-50%);
+            transform: rotate(180deg);
+        }
+
+        .arrowRight {
+
+            top: 50%;
+            color: black;
+            display: inline-block;
+            position: absolute;
+            /* transform: translateY(-50%); */
+            
+            right: 2%;
+        }
+        /* .arrowLeft:hover~.sc{
+            animation: moveLeft 2s linear normal forwards;
+        }
+        @keyframes moveLeft {
+            from{
+                margin: 5vw;
+            }
+            to{
+                margin-left: -95vw;
+            }
+            
+        } */
+        .reviewers {
+            position: relative;
+            overflow: hidden;
+        }
+        .sc{
+            width: 300vw;
+            display: flex;
+            margin-left: -190vw;
+        }
+        .sliderContent1 {
+            
+            width: 90vw;
+            margin-top: 3rem;
+            margin-bottom: 3rem;
+
+            margin-left: 5vw;
+            display: flex;
+            flex-direction: column;
+            /* background-color: #1B9DFF; */
+        }
+
+        .revImage {
+            margin: auto;
+            height: 30vh;
+            background-color: blanchedalmond;
+            /* width: 30vw; */
+        }
+
+        .revText {
+
+            padding: 2vw;
+            color: black;
+            line-height: 1.8rem;
+            font-size: 1.2rem;
+        }
+        .bottomSection{
+                /* position: relative; */
+                /* border: 5px solid red; */
+                display: flex;
+                /* align-items: flex-start; */
+                flex-direction: column;
+                padding: 0vw 0 5vw 5vw;
+            }
+            .about{
+                box-sizing: border-box;
+                padding-right: 10%;
+                /* margin-left: 5vw; */
+                /* display: inline-block; */
+                /* width: 36%; */
+                text-align: start;
+                font-size: 1.2rem;
+            }
+            .servicesBottom{
+                text-align: start;
+                /* display: inline-block; */
+                /* width: 19%; */
+                /* background-color: blue; */
+                box-sizing: border-box;
+                padding-right: 5%;
+                padding-top: 5vh;
+                
+            }
+            .locations{
+                
+                text-align: start;
+                /* display: inline-block; */
+                /* width: 19%; */
+                box-sizing: border-box;
+                padding-right: 5%;
+                padding-top: 7vh;
+                /* background-color: brown; */
+            }
+            .contact{
+                text-align: start;
+                /* display: inline-block; */
+                /* background-color: cadetblue; */
+                /* width: 19%; */
+                box-sizing: border-box;
+                padding-right: 2%;
+                padding-top: 7%;
+            }
+            
+            .bottomStyledWords{
+                line-height: 2.5rem;
+            }
+        
+        @media screen and (min-width: 800px) {
+            .cleanerImage {
+                width: 30vw;
+            }
+
+            .introContent {
+                width: 50vw;
+                margin: auto;
+            }
+
+            .services {
+                flex-direction: row;
+                padding-left: 4vw;
+                padding-right: 4vw;
+            }
+
+            .card {
+                position: relative;
+                margin-left: 1vw;
+                margin-right: 1vw;
+                height: 70vh;
+
+
+            }
+
+            .motoLine {
+                font-size: 3rem;
+            }
+
+            .imgbox {
+                height: 50%;
+            }
+
+            .serviceText {
+                overflow: auto;
+                height: 36%;
+                /* background-color: red; */
+
+            }
+
+            .cstyle {
+                font-size: 1.1rem;
+            }
+
+            .reviewStyle {
+                color: black;
+                padding-left: 20vw;
+                padding-right: 20vw;
+                font-size: 1.7rem;
+            }
+            .sliderContent1{
+                flex-direction: row;
+            }
+            .bottomSection{
+                position: relative;
+                /* border: 5px solid red; */
+                display: flex;
+                /* align-items: flex-start; */
+                flex-direction: row;
+                padding: 0vw 0 5vw 0;
+            }
+            .about{
+                box-sizing: border-box;
+                padding-right: 10%;
+                margin-left: 5vw;
+                /* display: inline-block; */
+                width: 36%;
+                text-align: start;
+            }
+            .servicesBottom{
+                text-align: start;
+                /* display: inline-block; */
+                width: 19%;
+                /* background-color: blue; */
+                box-sizing: border-box;
+                padding-right: 5%;
+            }
+            .locations{
+                
+                text-align: start;
+                /* display: inline-block; */
+                width: 19%;
+                box-sizing: border-box;
+                padding-right: 5%;
+                /* background-color: brown; */
+            }
+            .contact{
+                text-align: start;
+                /* display: inline-block; */
+                /* background-color: cadetblue; */
+                width: 19%;
+                box-sizing: border-box;
+                padding-right: 2%;
+            }
+            
+            .bottomStyledWords{
+                line-height: 2.5rem;
+            }
+            .high{
+                padding-top: 0;
+            }
+
+
+        }
+        .bottomText{
+            text-align: start;
+            padding: 5vw;
+        }
+        .card1:hover{
+            animation: myAnimation1 0.1s ease-out 0s normal forwards;
+        }
+        .card2:hover{
+            animation: myAnimation1 0.1s ease-out 0s normal forwards;
+        }
+        .card3:hover{
+            animation: myAnimation1 0.1s ease-out 0s normal forwards;
+        }
+        @keyframes myAnimation1 {
+            from{
+                top: 0px;
+                left: 0px;
+            }
+            to{
+                top: -1px;
+                left: 1px;
+                /* background-color: blanchedalmond; */
+            }
+        }
+        .card1{
+            animation: myAnimation 0.1s ease-out 0s normal forwards;
+        }
+        .card2{
+            animation: myAnimation2 0.1s ease-out 0s normal forwards;
+        }
+        .card3{
+            animation: myAnimation2 0.1s ease-out 0s normal forwards;
+        }
+        @keyframes myAnimation2 {
+            from{
+                top: 0px;
+                left: 0px;
+            }
+            to{
+                top: +1px;
+                left: -1px;
+                /* background-color: blanchedalmond; */
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+  
+    <div class="landingSVG">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" class="curve">
+            <path fill="#1B9DFF" fill-opacity="1"
+                d="M0,160L80,181.3C160,203,320,245,480,218.7C640,192,800,96,960,69.3C1120,43,1280,85,1360,106.7L1440,128L1440,0L1360,0C1280,0,1120,0,960,0C800,0,640,0,480,0C320,0,160,0,80,0L0,0Z">
+            </path>
+        </svg>
+    </div>
+    <div class="navBar">
+        <div>
+            <svg class="logoText" viewBox="0 0 85 45">
+                <path
+                    d="M16.3 27.3c-.1-.3-.3-.3-.4-.3-1.5 0-6.2 10.3-9.6 15.9-.4.8-.8 1-1.2 1-1.3.1-4.6-1.8-4.6-3.3 3.1-6.2 17-32.8 17.5-35 .4-1.4 1.9-1.7 3-1.7 1.8 0 6.2 2 6.2 4.2 0 .6-.5.9-.6 1.3-3.8 11.6-4.2 12.2-5.9 22C24.5 23 29.9 8.8 32.8 2.9c.4-1.4 1.9-1.7 3.1-1.7 1.8 0 6.2 2 6.2 4.2 0 .6-.3 1-.6 1.3-10.6 13.1-16.8 26.4-19.9 33.9-.5 1.2-1.2 1.6-1.7 1.6-1.2 0-2.4-1.2-3.8-2.6-.7-.6-.9-1.5-.9-2.5 0-2.2.6-6.3 1.1-9.8zm15.6 9.4c-.1.8-.2 1.4-.2 2 0 1.2.5 1.7 1.5 1.7 3.5 0 7.5-3.7 10.8-7.6 1.5-1.6 6.4-7.7 7.3-9 .2-.2.3-.3.4-.3.5 0 .8 1 .8 1-1.3 2.2-4.2 6.4-7.1 10.3-3.5 4.7-8.3 8.7-11.4 8.7-1.9 0-6.7-2.9-6.7-6.7C27.3 29.2 34.5 18 40 18c1.6 0 2 2.7 3.6 3.7 1.1.7 2.9 1 2.9 3.5-.2 2.5-10.2 9.2-14.6 11.5zm9.9-12.2c-.2-.1-.4-.1-.5-.1-3.6.9-6.9 4.9-8.5 9.3 6.1-4.2 8.1-7.3 9-9.2zm12.4 14c-1.9 1.9-4.5 4.7-6 4.7-1.9 0-4.5-1.5-4.5-3.7 0-7 8.6-21.8 12.7-21.8.3 0 .5.1.9.2 1.2.5 2.9 1.7 2.9 3.4 0 .5-.3 1.1-.8 1.5 1.8.2 4 1.5 4 3.4 0 .6-.2 1.2-.6 1.6-1.5 2-3.9 5.8-4.6 7.6-.4 1.2-.6 1.7-.6 2.3 0 .6.3.9.6.9.4 0 .9-.3 1.2-.8.5-.5 2.4-2.8 4.5-5.1 1.5-1.6 6.4-7.7 7.3-9 .2-.2.3-.3.4-.3.5 0 .8 1 .8 1-1.4 2.1-4.3 6.4-7.2 10.3-2.9 3.9-6 8.2-7.8 8.2-1.6.2-3.1-1.1-3.2-4.4zm1.9-10.6c0-.6-.4-1.1-.9-1.1-1.6 0-7.7 9.6-7.7 12.3 0 .5.2.7.5.7s.5-.1.9-.3c2.2-1.8 6.5-9.2 7.2-11.1v-.5zM79.8 8c1.5 0 4 1.8 4 3.6 0 .5-.2 1-.4 1.2-1.2 1.8-2.6 3.8-3.9 5.8 1.2.9 2.7 1.5 2.7 2.6 0 .6-.3.8-.8.8l-4.6.6c-3.3 4.7-6.4 9.7-8.3 14.1-.2.6-.3 1.1-.3 1.4 0 .5.2.9.6.9.3 0 .9-.2 1.5-.6.9-.5 3.5-2.4 5.7-5.3 1.5-1.6 6.4-7.7 7.3-9 .2-.2.3-.3.4-.3.5 0 .8 1 .8 1-1.4 2.1-4.4 6.4-7.2 10.3-1.5 2.2-4.8 5.9-6.8 7.5-.4.3-.9.5-1.3.5-2.1 0-4.8-2.5-4.8-4.7 0-3 3-9.2 6.2-15.2-3.2-1.1-3.6-2.7-3.6-4.3 0-.6.3-.8.8-.8 1 0 3.2.3 5.4.4 2-3.7 3.8-7 4.5-8.6C77.9 8.3 79 8 79.8 8z">
+                </path>
+            </svg>
+        </div>
+        <div class="menuIcon">
+            <div class="straightLine1"></div>
+            <div class="straightLine2"></div>
+            <div class="straightLine3"></div>
+        </div>
+    </div>
+    <div class="welcomeDiv">
+            <div class="motoLine">You move out, we clean up.<div>
+                    <div class="motoLine2">The simplest way to get your bond back. Guaranteed.*</div>
+                </div>
+                <img class="cleanerImage"
+                    src="https://thisisneat.com.au/wp-content/uploads/2020/01/bond-cleaning-customers.svg">
+            </div>
+            <div class="introContent">
+                <h2>Our Services</h2>
+                <h4>Dependable, professional, and experienced. Choose from any of our cleaning services and we’ll handle
+                    the rest.</h4>
+
+            </div>
+            <div class="services">
+                <div class="card card1">
+                    <img class="imgbox" src="img1.jpg">
+                    <div class="serviceText">
+                        <div class="hstyle">End of Lease Cleaning</div>
+                        <div class="cstyle">With our famous 72-hour bond back guarantee*, our cleaners always ensure
+                            tenants recover their full rental deposits.</div>
+                    </div>
+                    <a href="#" class="link">LEARN MORE <span style="font-size: large;">&#10230;</span></a>
+                </div>
+                <div class="card card2">
+                    <img class="imgbox" src="img2.jpg">
+                    <div class="serviceText">
+                        <div class="hstyle">Vacate Cleaning</div>
+                        <div class="cstyle">Our 5-star rated cleaners specialise in helping renters pass their final
+                            vacate inspections.</div>
+                    </div>
+                    <a href="#" class="link">LEARN MORE <span style="font-size: large;">&#10230;</span></a>
+                </div>
+                <div class="card card3">
+                    <img class="imgbox" src="img3.jpg">
+                    <div class="serviceText">
+                        <div class="hstyle">Moving Cleaning</div>
+                        <div class="cstyle">Our cleaning teams will make sure your property is ready for sale, a rental
+                            inspection, or for your family to move into.</div>
+                    </div>
+                    <a href="#" class="link">LEARN MORE <span style="font-size: large;">&#10230;</span></a>
+                </div>
+            </div>
+            <div style="font-size: 2.5rem; color: black; margin-top:3vh; margin-bottom: 2vh;">
+                Our Reviews
+            </div>
+            <div class="reviewStyle">
+                We believe our work speaks for itself, but our customers vouch for us too. Here’s just a few of the
+                reviews that make up our <a href="#">4.9 star rating</a> on <svg id="sprite-logo-google"
+                    viewBox="0 0 280 90" style=" height: 2.2rem">
+                    <path
+                        d="M120.6 47.3c0 12.8-10 22.2-22.2 22.2s-22.2-9.4-22.2-22.2c0-12.9 10-22.2 22.2-22.2s22.2 9.4 22.2 22.2zm-9.8 0c0-8-5.8-13.4-12.5-13.4s-12.5 5.5-12.5 13.4 5.8 13.4 12.5 13.4 12.5-5.5 12.5-13.4z"
+                        fill="#ea4335"></path>
+                    <path
+                        d="M168.6 47.3c0 12.8-10 22.2-22.2 22.2s-22.3-9.4-22.3-22.2 10-22.2 22.3-22.2 22.2 9.4 22.2 22.2zm-9.8 0c0-8-5.8-13.4-12.5-13.4s-12.5 5.5-12.5 13.4 5.8 13.4 12.5 13.4 12.5-5.5 12.5-13.4z"
+                        fill="#fbbc05"></path>
+                    <path
+                        d="M214.6 26.5v39.8c0 16.4-9.7 23.1-21.1 23.1-10.8 0-17.2-7.2-19.7-13.1l8.5-3.5c1.5 3.6 5.2 7.9 11.2 7.9 7.3 0 11.8-4.5 11.8-13v-3.2h-.3c-2.2 2.7-6.4 5-11.7 5-11.1 0-21.2-9.7-21.2-22.1 0-12.5 10.2-22.3 21.2-22.3 5.3 0 9.5 2.4 11.7 5h.3v-3.6zM206 47.4c0-7.8-5.2-13.5-11.8-13.5-6.7 0-12.4 5.7-12.4 13.5 0 7.7 5.6 13.4 12.4 13.4 6.6 0 11.8-5.7 11.8-13.4z"
+                        fill="#4285f4"></path>
+                    <path d="M229.8 3.1v65h-9.5v-65h9.5z" fill="#34a853"></path>
+                    <path
+                        d="M266.8 54.6l7.6 5c-2.4 3.6-8.3 9.8-18.5 9.8-12.6 0-22-9.7-22-22.2 0-13.2 9.5-22.2 20.9-22.2 11.5 0 17.1 9.2 19 14.1l1 2.5L245.2 54c2.3 4.5 5.8 6.7 10.8 6.7 4.9.1 8.3-2.4 10.8-6.1zm-23.2-8l19.8-8.2c-1.1-2.8-4.4-4.7-8.2-4.7-5 0-11.9 4.4-11.6 12.9z"
+                        fill="#ea4335"></path>
+                    <path
+                        d="M40.1 41.6v-9.4h31.7c.3 1.6.5 3.6.5 5.7 0 7.1-1.9 15.8-8.2 22-6 6.3-13.8 9.7-24 9.7-19 0-34.9-15.5-34.9-34.4S21.2.8 40.1.8c10.5 0 18 4.1 23.6 9.5l-6.6 6.6c-4-3.8-9.5-6.7-17-6.7-13.9 0-24.7 11.2-24.7 25s10.8 25 24.7 25c9 0 14.1-3.6 17.4-6.9 2.7-2.7 4.4-6.5 5.1-11.7z"
+                        fill="#4285f4"></path>
+                </svg> .
+            </div>
+            <div class="reviewers">
+                <div class="arrowLeft" id="la">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M8.122 24l-4.122-4 8-8-8-8 4.122-4 11.878 12z"/></svg>
+                </div>
+                <div class="arrowRight" id="ra">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M8.122 24l-4.122-4 8-8-8-8 4.122-4 11.878 12z"/></svg>
+                </div>
+                <div class="sc" id="sc">
+                <div class="sliderContent1">
+                    <img src="girl.jpg" class="revImage">
+                    <div class="revText">
+                        <div>My Name</div>
+                        <div>Some Other Detail</div>
+                        <div>Rating</div>
+                        <div>
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Soluta nostrum velit ex, omnis aut
+                            ipsum dolores quibusdam modi quam animi atque aspernatur eaque eveniet accusantium ipsam,
+                            odit officiis fuga perferendis!</div>
+                    </div>
+                </div>
+                <div class="sliderContent1">
+                    <img src="girl.jpg" class="revImage">
+                    <div class="revText">
+                        <div>My Name</div>
+                        <div>Some Other Detail</div>
+                        <div>Rating</div>
+                        <div>
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Soluta nostrum velit ex, omnis aut
+                            ipsum dolores quibusdam modi quam animi atque aspernatur eaque eveniet accusantium ipsam,
+                            odit officiis fuga perferendis!</div>
+                    </div>
+                </div>
+                <div class="sliderContent1">
+                    <img src="girl.jpg" class="revImage">
+                    <div class="revText">
+                        <div>My Name</div>
+                        <div>Some Other Detail</div>
+                        <div>Rating</div>
+                        <div>
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Soluta nostrum velit ex, omnis aut
+                            ipsum dolores quibusdam modi quam animi atque aspernatur eaque eveniet accusantium ipsam,
+                            odit officiis fuga perferendis!</div>
+                    </div>
+                </div>
+            </div>
+                
+                
+            </div>
+        <div style="background-color: #333333; padding-top: 10vh; margin-top: 5vh;">
+            <svg class="logoText" style="display: block; margin-left:5vw;  margin-bottom: 10vh;"; viewBox="0 0 85 45">
+                <path
+                    d="M16.3 27.3c-.1-.3-.3-.3-.4-.3-1.5 0-6.2 10.3-9.6 15.9-.4.8-.8 1-1.2 1-1.3.1-4.6-1.8-4.6-3.3 3.1-6.2 17-32.8 17.5-35 .4-1.4 1.9-1.7 3-1.7 1.8 0 6.2 2 6.2 4.2 0 .6-.5.9-.6 1.3-3.8 11.6-4.2 12.2-5.9 22C24.5 23 29.9 8.8 32.8 2.9c.4-1.4 1.9-1.7 3.1-1.7 1.8 0 6.2 2 6.2 4.2 0 .6-.3 1-.6 1.3-10.6 13.1-16.8 26.4-19.9 33.9-.5 1.2-1.2 1.6-1.7 1.6-1.2 0-2.4-1.2-3.8-2.6-.7-.6-.9-1.5-.9-2.5 0-2.2.6-6.3 1.1-9.8zm15.6 9.4c-.1.8-.2 1.4-.2 2 0 1.2.5 1.7 1.5 1.7 3.5 0 7.5-3.7 10.8-7.6 1.5-1.6 6.4-7.7 7.3-9 .2-.2.3-.3.4-.3.5 0 .8 1 .8 1-1.3 2.2-4.2 6.4-7.1 10.3-3.5 4.7-8.3 8.7-11.4 8.7-1.9 0-6.7-2.9-6.7-6.7C27.3 29.2 34.5 18 40 18c1.6 0 2 2.7 3.6 3.7 1.1.7 2.9 1 2.9 3.5-.2 2.5-10.2 9.2-14.6 11.5zm9.9-12.2c-.2-.1-.4-.1-.5-.1-3.6.9-6.9 4.9-8.5 9.3 6.1-4.2 8.1-7.3 9-9.2zm12.4 14c-1.9 1.9-4.5 4.7-6 4.7-1.9 0-4.5-1.5-4.5-3.7 0-7 8.6-21.8 12.7-21.8.3 0 .5.1.9.2 1.2.5 2.9 1.7 2.9 3.4 0 .5-.3 1.1-.8 1.5 1.8.2 4 1.5 4 3.4 0 .6-.2 1.2-.6 1.6-1.5 2-3.9 5.8-4.6 7.6-.4 1.2-.6 1.7-.6 2.3 0 .6.3.9.6.9.4 0 .9-.3 1.2-.8.5-.5 2.4-2.8 4.5-5.1 1.5-1.6 6.4-7.7 7.3-9 .2-.2.3-.3.4-.3.5 0 .8 1 .8 1-1.4 2.1-4.3 6.4-7.2 10.3-2.9 3.9-6 8.2-7.8 8.2-1.6.2-3.1-1.1-3.2-4.4zm1.9-10.6c0-.6-.4-1.1-.9-1.1-1.6 0-7.7 9.6-7.7 12.3 0 .5.2.7.5.7s.5-.1.9-.3c2.2-1.8 6.5-9.2 7.2-11.1v-.5zM79.8 8c1.5 0 4 1.8 4 3.6 0 .5-.2 1-.4 1.2-1.2 1.8-2.6 3.8-3.9 5.8 1.2.9 2.7 1.5 2.7 2.6 0 .6-.3.8-.8.8l-4.6.6c-3.3 4.7-6.4 9.7-8.3 14.1-.2.6-.3 1.1-.3 1.4 0 .5.2.9.6.9.3 0 .9-.2 1.5-.6.9-.5 3.5-2.4 5.7-5.3 1.5-1.6 6.4-7.7 7.3-9 .2-.2.3-.3.4-.3.5 0 .8 1 .8 1-1.4 2.1-4.4 6.4-7.2 10.3-1.5 2.2-4.8 5.9-6.8 7.5-.4.3-.9.5-1.3.5-2.1 0-4.8-2.5-4.8-4.7 0-3 3-9.2 6.2-15.2-3.2-1.1-3.6-2.7-3.6-4.3 0-.6.3-.8.8-.8 1 0 3.2.3 5.4.4 2-3.7 3.8-7 4.5-8.6C77.9 8.3 79 8 79.8 8z">
+                </path>
+            </svg>
+            <div class="bottomSection" >
+                <div class="about high">
+                    This is Neat is a bond cleaning service keeping tenants, real estate agents and property managers happy all across Sydney and Melbourne.
+                </div>
+                <div class="servicesBottom high">
+                    SERVICES
+                    <hr>
+                    <div class="bottomStyledWords">End of Lease Cleaning</div>
+                    <div class="bottomStyledWords">Vacate Cleaning</div>
+                    <div class="bottomStyledWords">Moving Cleaning</div>
+                </div>
+                <div class="locations high">
+                    LOCATIONS
+                    <hr>
+                    <div class="bottomStyledWords">Sydney</div>
+                    <div class="bottomStyledWords">Melbourne</div>
+                    <div class="bottomStyledWords">Inner West</div>
+                    <div class="bottomStyledWords">Eastern Suburbs</div>
+                    <div class="bottomStyledWords">Northern Beaches</div>
+                    <div class="bottomStyledWords">North Shore</div>
+                    <div class="bottomStyledWords">Surry Hills</div>
+                    <div class="bottomStyledWords">Bondi</div>
+                    <div class="bottomStyledWords">Paramatta</div>
+                </div>
+                <div class="contact high">
+                    CONTACT
+                    <hr>
+                    <div class="bottomStyledWords">This Is Neat Cleaning Pty Ltd</div>
+                    <div class="bottomStyledWords">hello@thisisneat.com.au</div>
+                </div>
+            </div>
+            <hr style="margin: 2rem 5vw 3vh 5vw;">
+            <div class="bottomText">
+                <p>*Our Bond Back Guarantee</p>
+                <p>1. You are required to confirm with your real estate agent which specific cleaning services are required under your lease agreement. You must ensure that you tick the appropriate checkboxes on our cleaning checklist when booking a Clean.</p>
+                <p>2. If, within 72 hours after your Clean, we are notified by you or your real estate agent that a part of our Services (as described in your Booking and in our cleaning checklist) has not been completed satisfactorily to allow your tenancy bond to be released back to you, we will come back to your Residence to re-perform those Services for no additional fee (Bond Back Guarantee). Any such notification should include photographs evidencing the areas that need to be addressed and we will make an assessment of whether the area is cleanable.</p>
+                <p style="padding-bottom: 0; margin-bottom: 0;">3. Our Bond Back Guarantee does not cover the following:
+                    <div>(a) cleaning services not described in your Booking or cleaning checklist available on the Site;</div>
+                    <div>(b) permanent damage at your Residence, including smoke stains, carpet stains, hard water stains, wall marks, mould, rusting, grease stains, and permanent odours; and</div>
+                    <div>(c) areas which, in our professional opinion, cannot be cleaned.</div>
+                </p>
+            </div>
+        </div>
+        <div></div>
+</body>
+<script src="main.js"></script>
+</html>
